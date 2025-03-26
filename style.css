@@ -224,7 +224,6 @@ body {
         text-align: center;
         /*centralizar home-text no meio*/
         gap: 5rem;
-        overflow: scroll;
         overflow-x: hidden;
     }
 
