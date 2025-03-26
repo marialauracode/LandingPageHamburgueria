@@ -159,7 +159,6 @@ body {
 
 .home-img img {
     width: 100%;
-    position: relative;
 }
 
 /* Media query para telas menores (responsive) */
@@ -225,6 +224,8 @@ body {
         text-align: center;
         /*centralizar home-text no meio*/
         gap: 5rem;
+        overflow: scroll;
+        overflow-x: hidden;
     }
 
     .home .text-h4 {
