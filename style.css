@@ -139,6 +139,7 @@ body {
 
 .home-text p {
     margin-bottom: 4rem;
+    text-align: justify;
 }
 
 .home-btn {
