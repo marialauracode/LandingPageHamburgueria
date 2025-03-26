@@ -1,87 +1,95 @@
-/* Importação da fonte Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* Resetando estilos padrões de margens, padding e fontes */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* o elemento se ajusta na tela e evita ficar maior do que o esperado. */
     font-family: 'Poppins', sans-serif;
     list-style: none;
     text-decoration: none;
 }
 
-/* Definindo variáveis de cores */
-:root{
-    --red:#d63a25;
-    --white:#fff;
-    --dark:#1e1c2a;
+/* Variáves */
+:root {
+    --red: #d63a25;
+    --white: #fff;
+    --dark: #1e1c2a;
 }
 
-/* Estilos gerais do corpo */
-body{
+body {
     color: var(--dark);
     background: var(--white);
 }
 
 /* Estilo do menu de navegação */
-.navigation{
+.navigation {
     display: flex;
+    /*para deixar lado a lado*/
     align-items: center;
     justify-content: space-between;
     padding: 18px 40px;
+    /* box-shadow: X Y Blur Spread Color;  
+   - 0 → Sem deslocamento horizontal (sombra centralizada).  
+   - 0.1rem → Pequeno deslocamento vertical (sombra levemente abaixo do elemento).  
+   - 0.5rem → Nível de desfoque da sombra (mais alto = mais difusa).  
+   - Sem valor de espalhamento (spread), então usa o padrão (0).  
+   - #ccc → Cor cinza claro.  
+   Resultado: Efeito sutil de elevação, destacando o elemento da tela. */
     box-shadow: 0 0.1rem 0.5rem #ccc;
     width: 100%;
     background: var(--white);
     transition: all 0.5s;
     position: fixed;
+    /*vai ficar fixo no topo, mesmo ao rolar a página*/
 }
 
-/* Logo com destaque nas cores */
-.navigation .logo{
+.navigation .logo {
     color: var(--red);
     font-size: 1.7rem;
+    /*1 rem = 16px*/
     font-weight: 600;
 }
 
-.logo span{
+.logo span {
     color: var(--dark);
 }
 
 /* Menu de navegação horizontal */
-.navigation ul{
+.navigation ul {
     display: flex;
     align-items: center;
     gap: 5rem;
 }
 
 /* Estilos do link no menu */
-.navigation ul li a{
+.navigation ul li a {
     color: var(--dark);
     font-size: 17px;
     font-weight: 500;
     transition: all 0.5s;
 }
 
-.navigation ul li a:hover{
+.navigation ul li a:hover {
     color: var(--red);
 }
 
 /* Ícone de busca */
-.navigation i{
+.navigation i {
     cursor: pointer;
     font-size: 1.5rem;
 }
 
 /* Menu para mobile - inicialmente escondido */
-.menu{
+.menu {
     cursor: pointer;
     display: none;
 }
 
 /* Estilo das barras do menu hamburguer */
-.menu .bar{
+.menu .bar {
     display: block;
+    /*um abaixo do outro = dividiu-se em três*/
     width: 28px;
     height: 3px;
     border-radius: 3px;
@@ -92,14 +100,17 @@ body{
 
 /* Mudança de cor das barras do menu hamburguer */
 .menu .bar:nth-child(1),
-.menu .bar:nth-child(3){
+/*primeira barra*/
+.menu .bar:nth-child(3) {
+    /*terceira barra*/
     background: var(--red);
 }
 
 /* Estilos da seção inicial da página */
-.home{
+.home {
     width: 100%;
     height: 100vh;
+    /*irá preencher toda a tela do usuário*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,28 +118,30 @@ body{
 }
 
 /* Estilos do texto principal na seção home */
-.home-text{
+.home-text {
     max-width: 37rem;
+    /*não poderá ultrapassar disso.*/
 }
 
-.home-text .text-h4{
+.home-text .text-h4 {
     font-size: 1.5rem;
     color: var(--red);
     margin-bottom: 1rem;
+    /*o texto sobe. margin-bottom dá um espaço embaixo.*/
 }
 
-.home-text .text-h1{
+.home-text .text-h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
     line-height: 4rem;
+    /*altura da linha*/
 }
 
-.home-text p{
+.home-text p {
     margin-bottom: 4rem;
 }
 
-/* Estilos do botão "Order yours" */
-.home-btn{
+.home-btn {
     padding: 15px 45px;
     background: var(--red);
     color: var(--white);
@@ -137,43 +150,49 @@ body{
     transition: all 0.5s;
 }
 
-.home-btn:hover{
+.home-btn:hover {
     background: #fc4c35;
 }
 
-/* Estilo da imagem na seção home */
-.home-img img{
+.home-img img {
     width: 100%;
 }
 
 /* Media query para telas menores (responsive) */
 @media (max-width:785px) {
+
     /* Estilos para navegação em telas pequenas */
-    .navigation{
+    .navigation {
         padding: 18px 20px;
     }
 
-    .menu{
+    .menu {
         display: block;
+        /*aqui o menu é ativado*/
     }
 
     /* Animação para o menu hamburguer */
-    .menu.ativo .bar:nth-child(1){
-        transform:  translateY(8px) rotate(45deg);
+    /* A classe ('ativo') foi criada no JS*/
+    /*criação do formato X*/
+    .menu.ativo .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
     }
 
     .menu.ativo .bar:nth-child(2) {
         opacity: 0;
+        /*a segunda barra desaparece*/
     }
 
-    .menu.ativo .bar:nth-child(3){
+    .menu.ativo .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 
     /* Estilo do menu de navegação em telas pequenas */
-    .nav-menu{
+    .nav-menu {
         position: fixed;
+        /*ao rolar a página, o menu fica fixo no topo*/
         right: -100%;
+        /*Inicialmente, o menu está fora da tela (escondido).*/
         top: 70px;
         width: 100%;
         height: 100%;
@@ -183,38 +202,42 @@ body{
         transition: 0.3s;
     }
 
-    .nav-menu.ativo{
+    .nav-menu.ativo {
         right: 0;
+        /*quando o menu está ativo, ele fica visível movendo-se para a direita*/
     }
 
-    .nav-item{
+    .nav-item {
         margin: 16px 0;
+        /*Define um espaçamento de 16px entre os itens do menu, para melhor organização.*/
     }
 
     /* Estilos da seção home em telas pequenas */
     /*main */
-    .home{
+    .home {
         padding: 100px 2%;
-        flex-direction: column; /*um abaixo do outro*/
-        text-align: center; /*centralizar home-text no meio*/
-        /*para não aparecer a barra de rolagem, respeitando o tamanho*/
+        flex-direction: column;
+        /*um abaixo do outro*/
+        text-align: center;
+        /*centralizar home-text no meio*/
         gap: 5rem;
     }
 
-    .home .text-h4{
+    .home .text-h4 {
         font-size: 15px;
     }
 
-    .home .text-h1{
+    .home .text-h1 {
         font-size: 2.5rem;
         line-height: 3rem;
     }
 
-    .home p{
+    .home p {
         font-size: 15px;
     }
 
-    .home-img{
+    .home-img {
         width: 125%;
+        /*Aumenta a imagem para 125% da largura original, garantindo que fique proporcional ao layout ajustado.*/
     }
 }
