@@ -21,6 +21,7 @@
 body {
     color: var(--dark);
     background: var(--white);
+
 }
 
 /* Estilo do menu de navegação */
@@ -158,6 +159,7 @@ body {
 
 .home-img img {
     width: 100%;
+    position: relative;
 }
 
 /* Media query para telas menores (responsive) */
