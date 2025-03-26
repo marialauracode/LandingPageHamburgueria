@@ -9,5 +9,5 @@ menu.addEventListener('click', () => { // quando o usuário clicar no menu...
     // clicou uma vez = aparece
     // clicou de novo = some
     menu.classList.toggle('ativo')  // tanto para o menu...
-    navMenu.classList.toggle('ativo') //... quanto para os itens de navegação
+    navMenu.classList.toggle('ativo') //... quanto para os itens de navegação 
 })
