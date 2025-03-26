@@ -225,6 +225,7 @@ body {
         /*centralizar home-text no meio*/
         gap: 5rem;
         overflow-x: hidden;
+        overflow-y:auto;
     }
 
     .home .text-h4 {
@@ -240,6 +241,7 @@ body {
     .home p {
         font-size: 15px;
         padding:0 3%;
+        text-align:justify;
     }
 
     .home-img {
