@@ -20,6 +20,7 @@
 body {
     color: var(--dark);
     background: var(--white);
+    overflow:hidden;
 }
 
 /* Estilo do menu de navegação */
