@@ -117,7 +117,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0px 10%;
-    gap:2rem
+    gap: 2rem;
 }
 
 /* Estilos do texto principal na seção home */
@@ -172,7 +172,7 @@ body {
 
     .menu {
         display: block;
-        /*aqui o menu é ativado*/ 
+        /*aqui o menu é ativado*/
     }
 
     /* Animação para o menu hamburguer */
@@ -226,7 +226,7 @@ body {
         /*centralizar home-text no meio*/
         gap: 5rem;
         overflow-x: hidden;
-        overflow-y:auto;
+        overflow-y: auto;
     }
 
     .home .text-h4 {
@@ -241,8 +241,8 @@ body {
 
     .home p {
         font-size: 15px;
-        padding:0 3%;
-        text-align:justify;
+        padding: 0 3%;
+        text-align: justify;
     }
 
     .home-img {
