@@ -223,6 +223,7 @@ body {
         /*centralizar home-text no meio*/
         gap: 5rem;
         margin-top:15px;
+        overflow: hidden;;
     }
 
     .home .text-h4 {
