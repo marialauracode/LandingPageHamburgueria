@@ -1,33 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="Pt-br">
 <head>
+    <!-- Definindo a codificação de caracteres e compatibilidade com o IE -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Configuração de viewport para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link para ícones da biblioteca Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link para o arquivo de estilos CSS -->
     <link rel="stylesheet" href="style.css">
+    <title>webSite</title>
 </head>
 <body>
+    <!-- Cabeçalho com o menu de navegação -->
     <header>
         <nav class="navigation">
-            <a href="#" class="logo">F<span>oo</span>D P<span>ee</span>K </a>
-
+            <!-- Logo do site -->
+            <a href="#" class="logo">F<span>oo</span>D P<span>ee</span>K</a>
+            <!-- Lista de itens de navegação -->
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
                 <li class="nav-item"><a href="#">Menu</a></li>
-                <li class="nav-item"><a href="#">Sobre</a></li>
-                <li class="nav-item"><a href="#">Contato</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+                <!-- Ícone de busca -->
                 <i class='bx bx-search'></i>
             </ul>
-
+            <!-- Ícones do menu hamburguer (para mobile) -->
             <div class="menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-
         </nav>
     </header>
-    
+
+    <!-- Seção principal (Home) -->
+    <main>
+        <section class="home">
+            <!-- Texto principal da seção -->
+            <div class="home-text">
+                <h4 class="text-h4">Welcome FooD PeeK</h4>
+                <h1 class="text-h1">Different spice for different tastes</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error veniam in voluptatem magni quisquam</p>
+                <!-- Botão de call-to-action -->
+                <a href="#" class="home-btn">Order yours</a>
+            </div>
+            <!-- Imagem da seção -->
+            <div class="home-img">
+                <img src="./img/imagem.png" alt="hamburguer">
+            </div>
+        </section>
+    </main>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
