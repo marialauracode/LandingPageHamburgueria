@@ -17,10 +17,14 @@
     --dark: #1e1c2a;
 }
 
+html, body{
+    overflow: hidden;
+    height: 100%;
+}
+
 body {
     color: var(--dark);
     background: var(--white);
-    overflow:hidden;
 }
 
 /* Estilo do menu de navegação */
@@ -116,6 +120,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0px 10%;
+    position:relative;
 }
 
 /* Estilos do texto principal na seção home */
@@ -158,6 +163,8 @@ body {
 
 .home-img img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Media query para telas menores (responsive) */
