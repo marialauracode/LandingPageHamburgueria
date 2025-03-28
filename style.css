@@ -40,14 +40,12 @@ body {
     width: 100%;
     background: var(--white);
     transition: all 0.5s;
-    /*fica fixo no topo, mesmo ao rolar a página*/
-    position: fixed;
+    position: fixed; /*fica fixo no topo, mesmo ao rolar a página*/
 }
 
 .navigation .logo {
     color: var(--red);
-    font-size: 1.7rem;
-    /*1 rem = 16px*/
+    font-size: 1.7rem; /*1 rem = 16px*/
     font-weight: 600;
 }
 
