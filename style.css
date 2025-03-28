@@ -3,8 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    /* o elemento se ajusta na tela e evita ficar maior do que o esperado. */
+    box-sizing: border-box; /* o elemento se ajusta na tela e evita ficar maior do que o esperado. */
     font-family: 'Poppins', sans-serif;
     list-style: none;
     text-decoration: none;
@@ -26,8 +25,7 @@ body {
 
 /* Estilo do menu de navegação */
 .navigation {
-    display: flex;
-    /*para deixar lado a lado*/
+    display: flex; /*para deixar lado a lado*/
     align-items: center;
     justify-content: space-between;
     padding: 18px 40px;
@@ -42,7 +40,7 @@ body {
     width: 100%;
     background: var(--white);
     transition: all 0.5s;
-    /*vai ficar fixo no topo, mesmo ao rolar a página*/
+    /*fica fixo no topo, mesmo ao rolar a página*/
     position: fixed;
 }
 
