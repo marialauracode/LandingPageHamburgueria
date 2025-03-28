@@ -97,10 +97,8 @@ body {
 }
 
 /* Mudança de cor das barras do menu hamburguer */
-.menu .bar:nth-child(1),
-/*primeira barra*/
-.menu .bar:nth-child(3) {
-    /*terceira barra*/
+.menu .bar:nth-child(1), /*primeira barra*/
+.menu .bar:nth-child(3) { /*terceira barra*/
     background: var(--red);
 }
 
@@ -108,7 +106,6 @@ body {
 .home {
     width: 100%;
     height: 100vh;
-    /*irá preencher toda a tela do usuário*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -119,21 +116,18 @@ body {
 /* Estilos do texto principal na seção home */
 .home-text {
     max-width: 37rem;
-    /*não poderá ultrapassar disso.*/
 }
 
 .home-text .text-h4 {
     font-size: 1.5rem;
     color: var(--red);
-    margin-bottom: 1rem;
-    /*o texto sobe. margin-bottom dá um espaço embaixo.*/
+    margin-bottom: 1rem; /*o texto sobe. margin-bottom dá um espaço embaixo.*/
 }
 
 .home-text .text-h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
-    line-height: 4.3rem;
-    /*altura da linha*/
+    line-height: 4.3rem; /*altura da linha*/
 }
 
 .home-text p {
@@ -167,8 +161,7 @@ body {
     }
 
     .menu {
-        display: block;
-        /*aqui o menu é ativado*/
+        display: block; /*aqui o menu é ativado*/
     }
 
     /* Animação para o menu hamburguer */
@@ -179,8 +172,7 @@ body {
     }
 
     .menu.ativo .bar:nth-child(2) {
-        opacity: 0;
-        /*a segunda barra desaparece*/
+        opacity: 0; /*a segunda barra desaparece*/
     }
 
     .menu.ativo .bar:nth-child(3) {
@@ -189,10 +181,8 @@ body {
 
     /* Estilo do menu de navegação em telas pequenas */
     .nav-menu {
-        position: fixed;
-        /*ao rolar a página, o menu fica fixo no topo*/
-        right: -100%;
-        /*Inicialmente, o menu está fora da tela (escondido).*/
+        position: fixed; /*ao rolar a página, o menu fica fixo no topo*/
+        right: -100%; /*Inicialmente, o menu está fora da tela (escondido).*/
         top: 70px;
         width: 100%;
         height: 100%;
@@ -203,13 +193,11 @@ body {
     }
 
     .nav-menu.ativo {
-        right: 0;
-        /*quando o menu está ativo, ele fica visível movendo-se para a direita*/
+        right: 0; /*quando o menu está ativo, ele fica visível movendo-se para a direita*/
     }
 
     .nav-item {
-        margin: 12px 0;
-        /*Define um espaçamento de 16px entre os itens do menu, para melhor organização.*/
+        margin: 12px 0; /*Espaçamento entre os itens quando o menu é aberto*/
     }
 
     /* Estilos da seção home em telas pequenas */
@@ -242,7 +230,6 @@ body {
     }
 
     .home-img {
-        width: 125%;
-        /*Aumenta a imagem para 125% da largura original, garantindo que fique proporcional ao layout ajustado.*/
+        width: 125%; /*Aumenta a imagem para 125% da largura original, garantindo que fique proporcional ao layout ajustado.*/
     }
 }
